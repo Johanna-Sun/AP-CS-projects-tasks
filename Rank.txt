@@ -1,0 +1,4 @@
+The fastest runner and the time: 
+John   243
+The second fastest runner and the time: 
+Kate   265
