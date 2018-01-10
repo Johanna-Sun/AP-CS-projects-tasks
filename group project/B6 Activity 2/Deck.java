@@ -11,8 +11,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<Card> cards;
-		List<Card> cards=new ArrayList<Cards>();
+	public List<Card> cards = new ArrayList<Card>();
 	/**
 	 * size is the number of not-yet-dealt cards.
 	 * Cards are dealt from the top (highest index) down.
