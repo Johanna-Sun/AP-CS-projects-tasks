@@ -17,7 +17,7 @@ public class Deck {
 	 * Cards are dealt from the top (highest index) down.
 	 * The next card to be dealt is at size - 1.
 	 */
-	private int size;
+	public int size;
 		String[] ranks= {"A","B","C"};
 		String[] suits= {"Giraffes","Lions","Tigers"};
 		int[] values= {2,1,6};
