@@ -31,6 +31,11 @@ public class Card {
 	 * @param cardPointValue an <code>int</code> value
 	 *                  containing the point value of the card
 	 */
+	 public Card() {
+		 rank = "default";
+		 suit = "default";
+		 pointValue = -1;
+	 }
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		rank = cardRank;
 		suit = cardSuit;
