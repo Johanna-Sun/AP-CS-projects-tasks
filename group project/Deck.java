@@ -29,7 +29,10 @@ public class Deck {
 	 * @param suits is an array containing all of the card suits.
 	 * @param values is an array containing all of the card point values.
 	 */
+
+
 	public Deck(String[] ranks, String[] suits, int[] values) {
+		cards = new ArrayList<Card>();
 		for (int i = 0; i<ranks.length; i++ ) {
 			for (int j = 0; j<suits.length ; j++ ) {
 				cards.add(new Card(ranks[i],suits[j],values[i]));
@@ -80,8 +83,8 @@ public class Deck {
 			return null;
 		} else {
 			Card dealCard = new Card();
-			dealCard = cards.get(size);
-			cards.remove(size);
+			dealCard = cards.get(size-1);
+			cards.remove(size-1);
 			size -= 1;
 			return dealCard;
 		}

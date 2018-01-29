@@ -8,9 +8,11 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		String[] ranks = {"A", "B", "C"};
-		String[] suits = {"Giraffes", "Lions"};
-		int[] values = {2,1,6};
+		String[] ranks = {"jack", "queen", "king"};
+    String[] suits = {"blue", "red"};
+    int[] pointValues = {11, 12, 13};
+    Deck test = new Deck(ranks, suits, pointValues);
+		System.out.println(test.deal().toString());
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 }
